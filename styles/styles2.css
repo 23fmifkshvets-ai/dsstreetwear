@@ -537,7 +537,7 @@
   .header-left,
   .header-right {
     padding: 0 12px;
-    gap: 8px;
+    gap: 14px;
   }
 
   .icon-svg {
@@ -558,6 +558,9 @@
   .hero {
     height: 35vh;
   }
+    .hero-video {
+       height: 34vh; 
+    }
 
   .hero-text {
     bottom: 24px;
@@ -609,6 +612,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
