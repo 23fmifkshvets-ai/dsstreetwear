@@ -733,17 +733,29 @@
       height: 34px;
     }
   }
-  @media (min-width: 768px) {
-  body {
-    padding-top: 68px;
+  @media (max-width: 767px) {
+    .header {
+    justify-content: center;
+  }
+
+  .header-left,
+  .header-right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  .header-left {
+    left: 12px;
+    gap: 14px;
+  }
+
+  .header-right {
+    right: 12px;
+    gap: 14px;
   }
   }
     
-    /*body {
-      outline: 2px solid red;
-    }
-    * {
-      outline: 1px solid rgba(255,0,0,.2);
+    
 
-    }
 
