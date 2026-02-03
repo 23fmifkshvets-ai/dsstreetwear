@@ -217,28 +217,24 @@
     }
   }*/
   
-  @media (min-width: 769px) and (max-width: 1024px) {
+/*  @media (min-width: 769px) and (max-width: 1024px) {
     .hero {
       height: min(55svh, 420px);
-      background-image: url("./img/hero-fallback.png");
+     /* background-image: url("./img/hero-fallback.png");*/
       background-size: cover;
       background-position: center 30%
     }
   }
-  
-  /* мобілка + слабкий девайс */
+  */
+  /* мобілка + слабкий девайс 
   @media (max-width: 768px) {
     .hero {
       height: min(40svh, 320px); /* або 40dvh */
-     /background-image: url("./img/hero-fallback.png");
+     /*background-image: url("./img/hero-fallback.png");*/
       background-size: cover;
       background-position: center 30%;
     }
-  
-    .hero-video {
-      display: none;
-    }
-  }
+  }*/
   
     /*.hero {
       height: 420px;
@@ -668,14 +664,12 @@
     margin-top: 14px;
     font-size: 14px;
     line-height: 1.6;
-  }
-  
+  } 
   .footer-support a {
     color: #1e90ff;
     text-decoration: none;
     margin: 0 4px;
-  }
-  
+  }  
   .footer-support a:hover {
     text-decoration: underline;
   }
@@ -687,54 +681,8 @@
     opacity: 0.8;
   }
   /*-----Медіа-Хедер---*/
-  @media (max-width: 768px) {
-    .footer {
-      padding: 12px 10px 24px 10px;
-    }
-    .footer-lang
-    .footer-support
-    .footer-copy {
-      font-size: 12px;
-      font-weight: 300;
-    }
-    .footer-inner {
-      gap: 8px;
-    }
-    .footer-support {
-      margin-bottom: 1px;
-      margin-top: 6px;
-    }
-    .footer-copy {
-      margin-top: 1px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .header {
-      height: 72px; /* трохи вище */
-    }
-  
-    .icon {
-      font-size: 24px; /* ⬅️ було 18 */
-    }
-  
-    .header-left,
-    .header-right {
-      gap: 16px;
-      padding: 0 16px;
-    }
-  
-    .logo-img {
-      height: 44px; /* ⬅️ було 58, але адаптивніше */
-    }
-  
-    .avatar {
-      width: 34px;
-      height: 34px;
-    }
-  }
   @media (max-width: 767px) {
-    .header {
+  .header {
     justify-content: center;
   }
 
@@ -747,15 +695,12 @@
 
   .header-left {
     left: 12px;
-    gap: 14px;
   }
 
   .header-right {
     right: 12px;
-    gap: 14px;
   }
   }
-    
-    
+
 
 
