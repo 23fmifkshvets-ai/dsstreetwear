@@ -521,7 +521,7 @@
     opacity: 0.8;
   }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   /* ===== HEADER ===== */
   .header {
@@ -535,7 +535,7 @@
 
   .header-left,
   .header-right {
-    padding: 0 8px;
+    padding: 0 12px;
     gap: 8px;
   }
 
@@ -565,7 +565,7 @@
   }
 
   .hero {
-    background-image: url("./img/hero-fallback.png");
+    /*background-image: url("./img/hero-fallback.png");*/
     background-size: cover;
     background-position: center;
   }
@@ -608,6 +608,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
