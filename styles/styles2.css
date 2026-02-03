@@ -555,7 +555,7 @@
 
   /* ===== HERO ===== */
   .hero {
-    height: 42vh;
+    height: 35vh;
   }
 
   .hero-text {
@@ -608,6 +608,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
