@@ -531,7 +531,7 @@
   }
 
   body {
-    padding-top: 56px; /* синхрон з хедером */
+    padding-top: 60px; /* синхрон з хедером */
   }
 
   .header-left,
@@ -612,6 +612,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
