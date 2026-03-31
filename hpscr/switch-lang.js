@@ -1,89 +1,35 @@
-const switchBtn = document.getElementById('lang-switch');
-const flag = document.querySelector('.lang-flag');
-const text = document.querySelector('.lang-text');
+document.addEventListener('DOMContentLoaded', () => {
+    const switchBtn = document.getElementById('lang-switch');
+    if (!switchBtn) return;
 
-const currentLang = document.documentElement.lang;
-const path = window.location.pathname;
+    const path = window.location.pathname;
+    const flag = switchBtn.querySelector('.lang-flag');
 
+    const isDE = path.includes('/de/');
+    const isEN = path.includes('/en/');
 
-// 👉 UI
-if (currentLang === 'de') {
-    flag.src = '/img/elements/uk-flag.svg';
-    text.textContent = 'English';
-} else {
-    flag.src = '/img/elements/de-flag.svg';
-    text.textContent = 'Deutsch';
-}
-
-
-// 👉 КЛІК
-switchBtn.addEventListener('click', () => {
-    const parts = path.split('/');
-
-    // ['', 'pages', 'de', 'product', 'file.html']
-
-    if (currentLang === 'de') {
-        parts[2] = 'en';
+    if (isDE) {
+        flag.src = '/img/elements/uk-flag.svg';
     } else {
-        parts[2] = 'de';
+        flag.src = '/img/elements/de-flag.svg';
     }
 
-    const newPath = parts.join('/');
+    switchBtn.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    window.location.href = newPath;
+        let newPath;
+
+        if (isDE) {
+            newPath = path.replace('/de/', '/en/');
+            localStorage.setItem('lang', 'en');
+        } else if (isEN) {
+            newPath = path.replace('/en/', '/de/');
+            localStorage.setItem('lang', 'de');
+        } else {
+            // fallback (якщо щось не так)
+            newPath = '/pages/en/';
+        }
+
+        window.location.href = newPath;
+    });
 });
-
-/*const switchBtn = document.getElementById('lang-switch');
-const flag = document.querySelector('.lang-flag');
-const text = document.querySelector('.lang-text');
-
-// беремо мову з <html lang="...">
-const currentLang = document.documentElement.lang;
-const path = window.location.pathname;
-
-// 👉 ВИСТАВЛЯЄМО UI
-if (currentLang === 'de') {
-    flag.src = '/img/elements/uk-flag.svg';
-    text.textContent = 'English';
-} else {
-    // дефолт = EN
-    flag.src = '/img/elements/de-flag.svg';
-    text.textContent = 'Deutsch';
-}
-
-
-// 👉 КЛІК
-switchBtn.addEventListener('click', () => {
-    let newPath;
-
-    if (currentLang === 'de') {
-        newPath = path.replace('/de/', '/en/');
-    } else {
-        newPath = path.replace('/en/', '/de/');
-    }
-
-    window.location.href = newPath;
-});
-
-
-
-const flag = document.querySelector('.lang-flag');
-const text = document.querySelector('.lang-text');
-const path = window.location.pathname;
-
-if (path.includes('/en/')) {
-    // зараз EN → можна перейти на DE
-    flag.src = '/img/elements/de-flag.svg';
-    text.textContent = 'Deutsch';
-
-
-} else if (path.includes('/de/')) {
-    // зараз DE → можна перейти на EN
-    flag.src = '/img/elements/uk-flag.svg';
-    text.textContent = 'English';
-
-} else {
-    // якщо взагалі нема мови в URL → це EN (дефолт)
-    flag.src = '/img/elements/de-flag.svg';
-    text.textContent = 'Deutsch';
-}*/
