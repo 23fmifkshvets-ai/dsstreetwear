@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../../../img/elements/logo-black.svg">
+    <link rel="stylesheet" href="../../../styles/style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Royal Blade Tee</title>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="header-left">
+                <a href="#menu" class="icon">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </a>
+
+                <div id="menu" class="menu-overlay">
+
+                    <a href="#!" class="menu-close">✕</a>
+
+                    <nav class="menu">
+                        <a href="../../../index.html">Startseite</a>
+                        <a href="#">DS Forge Kollektion</a>
+                        <a href="../../../pages/info/about_us.html">Über uns</a>
+                        <a href="../../../pages/info/contacts.html" target="_blank">Kontakt</a>
+                    </nav>
+                </div>
+
+                <!--svg icon circle-->
+            </div>
+
+            <div class="header-center">
+                <a href="../../../index.html" class="logo-link">
+                    <img src="../../../img/elements/logo.svg" alt="DS" class="logo-img">
+                </a>
+            </div>
+
+            <div class="header-right">
+                <button class="icon">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M6 8h12l-1.5 12h-9z" />
+                        <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+                    </svg>
+                </button>
+                <div class="avatar"></div>
+            </div>
+        </header>
+    </div>
+
+    <main class="product-page">
+        <div class="product-container">
+
+            <div class="product-gallery">
+                <div class="image-wrapper">
+                    <button class="arrow left" onclick="prevImage()">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <img id="product-image" src="../../../img/rbt_vb/rbt_vb-1.jpg" alt="Royal Blade Tee">
+                    <button class="arrow right" onclick="nextImage()">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">Royal Blade Tee – Verwaschenes Schwarz</h1>
+
+                <div class="product-description">
+                    <!--<h2 class="desc-heading">Step into the shadow.</h2>-->
+                    <p>
+                        Das Royal Blade T-Shirt von DS STREETWEAR vereint eine dunkle Streetwear-Ästhetik mit einem
+                        kraftvollen Statement-Design. Auf der Vorderseite
+                        sticht ein markantes Schwertmotiv mit dem DS-Crest hervor, eingerahmt von aggressiven gotischen
+                        Linien und tribal Elementen.
+                        Die Rückseite bleibt cleaner und raffinierter mit dem kleineren Crest — perfekt für einen
+                        starken Look aus jeder Perspektive.
+                    </p>
+                    <p>
+                        Dieses Shirt ist für diejenigen gemacht, die keine gewöhnlichen Basics tragen wollen. Es
+                        verbindet dunkle Streetwear,
+                        Ritter-Vibes und eine selbstbewusste Attitude in einem Piece.
+                        Ideal für den Alltag, Streetstyle, Gym-Fits oder als auffälliges Outfit für bold Looks.
+                    </p>
+                    <ul class="features-list">
+                        <li>exklusives DS STREETWEAR Design</li>
+                        <li>kraftvoller Frontprint mit Schwert- und Wappenmotiv</li>
+                        <li>cleaner Backprint für ein elegantes Finish</li>
+                        <li>dunkler, moderner Streetwear-Look</li>
+                        <li>perfekt für alle, die Stil, Präsenz und Charakter tragen wollen</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-btn_container">
+            <!--<div class="product-btn">
+                <div class="product-controls">
+                    <div class="color-selector">
+                        <button class="color-btn color-black" data-color="black"></button>
+                        <button class="color-btn color-white" data-color="white"></button>
+                        <button class="color-btn color-red" data-color="red"></button>
+                        <button class="color-btn color-black" data-color="black"></button>
+                        <button class="color-btn color-white" data-color="white"></button>
+                    </div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                        <button class="size-btn" data-size="XL">XL</button>
+                        <button class="size-btn" data-size="XXL">XXL</button>
+                        <button class="size-btn" data-size="XXXL">XXXL</button>
+                    </div>
+                </div>
+
+                <button class="guide-btn">Order size</button>-->
+            <div class="purchase-actions">
+                <button class="btn-buy"
+                    onclick="window.location.href='https://www.paypal.com/ncp/payment/NEZDFQWU2LP3S'">Jetzt
+                    kaufen</button>
+                <!--<button class="btn-wishlist">In wish list</button>-->
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <script src="../../../hpscr/rbt_vb.js"></script>
+    <!--<script src="/hpscr/stat.js"></script> -->
+</body>
+
+</html>
