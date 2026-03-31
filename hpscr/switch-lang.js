@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const isEN = path.includes('/en/');
 
     if (isDE) {
-        flag.src = '/img/elements/uk-flag.svg';
+        flag.src = '../../img/elements/uk-flag.svg';
     } else {
-        flag.src = '/img/elements/de-flag.svg';
+        flag.src = '../../img/elements/de-flag.svg';
     }
 
     switchBtn.addEventListener('click', (e) => {
