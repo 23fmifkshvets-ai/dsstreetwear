@@ -7,9 +7,9 @@ setTimeout(() => {
         const lang = navigator.language;
 
         if (lang.startsWith('de')) {
-            window.location.href = '/pages/de/index.html';
+            window.location.href = 'pages/de/index.html';
         } else {
-            window.location.href = '/pages/en/index.html';
+            window.location.href = 'pages/en/index.html';
         }
     }
 }, 4000); 
