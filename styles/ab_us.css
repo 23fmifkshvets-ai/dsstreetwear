@@ -188,15 +188,6 @@ body {
 
 }
 
-/*.bg-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    opacity: 0.06;
-    pointer-events: none;
-}*/
 .bg-logo {
     position: fixed;
 
@@ -252,13 +243,10 @@ body {
     .logo {
         width: 140px;
     }
-
-    /* .bg-logo {
-        width: 120vw;
-        opacity: 0.05;
-    }*/
-
-}
+     .bg-logo {
+        width: 350px;
+        top: 10%;
+    }
 
 @media (max-width: 480px) {
 
@@ -276,9 +264,9 @@ body {
         letter-spacing: 0.2em;
     }
 
-    /* .bg-logo {
+     .bg-logo {
         width: 350px;
-        opacity: 0.04;
-    }*/
+        top: 10%;
+    }
 
 }
