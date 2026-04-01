@@ -177,7 +177,7 @@ button {
 /*-----lang-----*/
 
 .lang-switch {
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   cursor: pointer;
   display: flex;
   align-items: center;
