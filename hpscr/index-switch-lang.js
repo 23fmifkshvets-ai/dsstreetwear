@@ -7,12 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const isDE = path.includes('/de/');
     const isEN = path.includes('/en/');
-
-    // 👉 правильний прапор
+    
     if (isDE) {
-        flag.src = '/img/elements/uk-flag.svg';
+        flag.src = '../img/elements/uk-flag.svg';
     } else {
-        flag.src = '/img/elements/de-flag.svg';
+        flag.src = '../img/elements/de-flag.svg';
     }
 
     switchBtn.addEventListener('click', (e) => {
