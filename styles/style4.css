@@ -188,9 +188,9 @@ button {
 .menu .lang-flag {
   margin: 0;
   display: flex;
-
   width: 22px;
 }
+
 .lang-flag {
   width: 28px;
   height: auto;
@@ -206,6 +206,7 @@ button {
   transform: scale(1.08);
   opacity: .9;
 }
+
 /*----ICONS-----*/
 
 
