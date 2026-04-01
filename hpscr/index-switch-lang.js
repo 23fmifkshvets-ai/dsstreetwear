@@ -34,39 +34,3 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = newPath;
     });
 });
-
-
-/*document.addEventListener('DOMContentLoaded', () => {
-    const switchBtn = document.getElementById('lang-switch');
-    if (!switchBtn) return;
-
-    const path = window.location.pathname;
-    const flag = switchBtn.querySelector('.lang-flag');
-
-    // 👉 показуємо правильний прапор
-    if (path.includes('/pages/de/')) {
-        flag.src = '/img/elements/uk-flag.svg'; // показує EN
-    } else {
-        flag.src = '/img/elements/de-flag.svg'; // показує DE
-    }
-
-    // 👉 перемикання
-    switchBtn.addEventListener('click', () => {
-        let newLang;
-
-        if (path.includes('/pages/de/')) {
-            newLang = 'en';
-        } else {
-            newLang = 'de';
-        }
-
-        localStorage.setItem('lang', newLang);
-
-        const newPath = path
-            .replace('/pages/de/', '/pages/en/')
-            .replace('/pages/en/', '/pages/de/');
-
-        window.location.href = newPath;
-    });
-});
-*/
