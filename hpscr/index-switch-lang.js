@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             newPath = path.replace('/en/', '/de/');
             localStorage.setItem('lang', 'de');
         } else {
-            // fallback (якщо щось не так)
+            // fallback
             newPath = '/pages/en/';
         }
 
