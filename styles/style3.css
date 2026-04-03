@@ -481,7 +481,7 @@ a.logo-link:hover .logo-img {
 }
 
 .story {
-  height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   top: 0;
 
@@ -667,6 +667,7 @@ a.logo-link:hover .logo-img {
   color: #fff;
   padding: 38px 12px;
   min-height: auto;
+  margin-top: -2px;
 }
 
 .footer-inner {
