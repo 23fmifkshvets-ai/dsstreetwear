@@ -12,4 +12,4 @@ setTimeout(() => {
             window.location.href = './pages/en/index.html';
         }
     }
-}, 4000); 
+}, 2000); 
