@@ -245,7 +245,6 @@ body {
     }
      .bg-logo {
         width: 350px;
-        top: 10%;
     }
 
 @media (max-width: 480px) {
@@ -266,7 +265,6 @@ body {
 
      .bg-logo {
         width: 350px;
-        top: 10%;
     }
 
 }
