@@ -479,7 +479,8 @@ a.logo-link:hover .logo-img {
 }
 
 .story {
-  height: 100dvh;
+ /* height: 100dvh;*/
+  height: calc(100dvh + 2px);
   width: 100%;
   top: 0;
 
