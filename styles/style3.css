@@ -517,7 +517,7 @@ a.logo-link:hover .logo-img {
   transform: translateY(-50%);
 
   z-index: 2;
-  /*pointer-events: none; щоб не заважали клікам */
+  
 }
 
 .story-products img {
@@ -602,7 +602,7 @@ a.logo-link:hover .logo-img {
   bottom: -2px;
   height: 4px;
   background: #000;
-  z-index: 10;
+  z-index: 3;
   pointer-events: none;
 }
 
