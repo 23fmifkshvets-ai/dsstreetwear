@@ -504,7 +504,7 @@ a.logo-link:hover .logo-img {
   --overlay: 0;
 
   scroll-snap-align: start;
- /* scroll-margin-top: 1px;*/
+  scroll-margin-top: 1px;
 
   scroll-snap-stop: always;
 }
@@ -601,7 +601,7 @@ a.logo-link:hover .logo-img {
   z-index: 1;
 }
 
-.story-3::after {
+/*.story-3::after {
   content: "";
   position: absolute;
  /* left: 0;
@@ -612,16 +612,16 @@ a.logo-link:hover .logo-img {
   /*background: #000;*/
   z-index: 3;
   pointer-events: none;
-}
+}*/
 
-/*.story-3::after {
+.story-3::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom,
       transparent 60%,
       black);
-}*/
+}
 
 /*.story-gap {
     height: 5vh;
