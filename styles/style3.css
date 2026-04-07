@@ -479,7 +479,7 @@ a.logo-link:hover .logo-img {
 }
 
 .story {
- min-height: 100dvh;
+ height: 150dvh;
  /* height: calc(100dvh + 2px);*/
   width: 100%;
   top: 0;
@@ -498,9 +498,9 @@ a.logo-link:hover .logo-img {
   --overlay: 0;
 
   scroll-snap-align: start;
-  scroll-margin-top: 1px;
+ /* scroll-margin-top: 1px;*/
 
-  /*scroll-snap-stop: always;*/
+  scroll-snap-stop: always;
 }
 
 .story::before {
