@@ -279,6 +279,7 @@ a.logo-link:hover .logo-img {
   transform: translateX(-50%);
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 20px ! important;
   text-align: center;
   letter-spacing: 2px;
