@@ -390,7 +390,7 @@ a.logo-link:hover .logo-img {
   font-size: 24px;
 }
 
-.add-to-cart {
+/*.add-to-cart {
   position: absolute;
   bottom: 34px;
   right: 44px;
@@ -413,7 +413,8 @@ a.logo-link:hover .logo-img {
   opacity: 0;
   transform: translateY(10px);
   transition: 0.25s;
-}
+}*/
+
 
 .product-image:hover .add-to-cart {
   opacity: 1;
@@ -432,6 +433,9 @@ a.logo-link:hover .logo-img {
 
 .add-to-cart:hover .cart-text {
   opacity: 1;
+}
+.add-to-cart{
+  display: none;
 }
 
 .product-image img {
@@ -592,8 +596,6 @@ a.logo-link:hover .logo-img {
   --bg-x: 10%;
   --bg-y: 20%;
   z-index: 3;
-  overscroll-behavior: contain;/**/
-  touch-action: pan-y;/**/
 }
 
 .story-3::before {
@@ -669,6 +671,7 @@ a.logo-link:hover .logo-img {
     color .3s ease,
     transform .3s ease,
     box-shadow .3s ease;
+    z-index: 5;
 }
 
 .story-btn svg {
