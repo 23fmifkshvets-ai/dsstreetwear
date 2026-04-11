@@ -18,10 +18,10 @@
 
 html {
   /**/
- /* scroll-behavior: smooth;
+  scroll-behavior: smooth;
   scroll-snap-type: y proximity;
-  scroll-padding-top: 0;*/
-  scroll-snape-type: none;/**/
+  scroll-padding-top: 0;
+ /* scroll-snape-type: none;*/
 }
 
 html,
@@ -483,10 +483,7 @@ a.logo-link:hover .logo-img {
 
 /* #region STORY */
 .stories {
-  height: 100vh;/**/
-  overflow-y: auto;/**/
-  scroll-snap-type: y proximity;/**/
-  /*display: block;*/
+  display: block;
 }
 
 .story {
