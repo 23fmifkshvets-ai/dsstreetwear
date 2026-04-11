@@ -18,9 +18,10 @@
 
 html {
   /**/
-  scroll-behavior: smooth;
+ /* scroll-behavior: smooth;
   scroll-snap-type: y proximity;
-  scroll-padding-top: 0;
+  scroll-padding-top: 0;*/
+  scroll-snape-type: none;/**/
 }
 
 html,
@@ -482,12 +483,14 @@ a.logo-link:hover .logo-img {
 
 /* #region STORY */
 .stories {
-  display: block;
+  height: 100vh;/**/
+  overflow-y: auto;/**/
+  scroll-snap-type: y proximity;/**/
+  /*display: block;*/
 }
 
 .story {
- height: 100dvh;
- /* height: calc(100dvh + 2px);*/
+  height: 100dvh;
   width: 100%;
   top: 0;
 
@@ -501,7 +504,7 @@ a.logo-link:hover .logo-img {
   overflow: hidden;
   position: sticky;
   isolation: isolate;
- transform: translateZ(0);
+  transform: translateZ(0);
   --overlay: 0;
 
   scroll-snap-align: start;
@@ -592,6 +595,8 @@ a.logo-link:hover .logo-img {
   --bg-x: 10%;
   --bg-y: 20%;
   z-index: 3;
+  overscroll-behavior: contain;/**/
+  touch-action: pan-y;/**/
 }
 
 .story-3::before {
