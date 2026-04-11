@@ -140,10 +140,10 @@ html, body{
 
 @media (max-width: 768px) {
     .erf-text{
-        font-size: 12 px;
+        font-size: 11px;
       }
-       erf-text {
-        font-sile: 14px;
+       h-2 {
+        font-size: 13px;
        }
     .gallery {
         grid-template-columns: repeat(2, 1fr);
