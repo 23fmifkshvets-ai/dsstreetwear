@@ -508,10 +508,10 @@ a.logo-link:hover .logo-img {
   transform: translateZ(0);
   --overlay: 0;
 
-  scroll-snap-align: start;
+ /* scroll-snap-align: start;*/
   scroll-margin-top: 1px;
 
-  scroll-snap-stop: always;
+  /*scroll-snap-stop: always;*/
 }
 
 .story::before {
