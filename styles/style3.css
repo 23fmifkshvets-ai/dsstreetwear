@@ -595,6 +595,9 @@ a.logo-link:hover .logo-img {
   background-image: url("../img/erfurt/photo_2026-04-10_22-47-53.jpg");
   --bg-x: 10%;
   --bg-y: 20%;
+  background-position: var(--bg-x) var(--bg-y); 
+  background-size: cover; /**/
+  position: relative;
   z-index: 3;
 }
 
