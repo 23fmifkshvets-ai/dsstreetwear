@@ -292,22 +292,19 @@
   <script src="../../hpscr/gallery.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-  const ua = navigator.userAgent.toLowerCase();
-  
-  const buggyAgents = [
-    'miuibrowser', 
-    'samsungbrowser', 
-    'ucbrowser', 
-    'fbav', 
-    'instagram', 
-    'puffin'
-  ];
-  const isBuggy = buggyAgents.some(agent => ua.indexOf(agent) > -1);
+    const ua = navigator.userAgent.toLowerCase();
+    const isSamsung = ua.indexOf('samsungbrowser') > -1;
 
-  if (isBuggy) {
-    document.body.classList.add('is-buggy-browser');
-  }
-});
+    if (isSamsung) {
+        document.body.classList.add('is-samsung-browser');
+    }
+    const buggyAgents = ['miuibrowser', 'samsungbrowser', 'ucbrowser', 'fbav', 'instagram'];
+    const isBuggy = buggyAgents.some(agent => ua.indexOf(agent) > -1);
+
+    if (isBuggy) {
+        document.body.classList.add('is-buggy-browser');
+    }
+  });
   </script>
 </body>
 
