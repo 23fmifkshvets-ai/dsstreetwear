@@ -49,7 +49,7 @@ body {
     #ffffff 65%,
     #111111 80%,
     #000000 100%
-  );
+  ) !important;
   overscroll-behavior-y: contain;
 }
 
