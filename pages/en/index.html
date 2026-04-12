@@ -290,14 +290,24 @@
   <script src="../../hpscr/index-switch-lang.js"></script>
   <script src="../../hpscr/gallery.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
   const ua = navigator.userAgent.toLowerCase();
-  const isMiui = ua.indexOf('miuibrowser') > -1 || ua.indexOf('xiaomi') > -1;
+  
+  const buggyAgents = [
+    'miuibrowser', 
+    'samsungbrowser', 
+    'ucbrowser', 
+    'fbav', 
+    'instagram', 
+    'puffin'
+  ];
+  const isBuggy = buggyAgents.some(agent => ua.indexOf(agent) > -1);
 
-  if (isMiui) {
+  if (isBuggy) {
     document.body.classList.add('is-buggy-browser');
   }
-});</script>
+});
+  </script>
 </body>
 
 </html>
