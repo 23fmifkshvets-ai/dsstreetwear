@@ -622,6 +622,28 @@ a.logo-link:hover .logo-img {
   z-index: 1;
   pointer-events: none;
 }
+
+/* Скасовуємо прив'язку на рівні html */
+.is-buggy-browser, 
+.is-buggy-browser html {
+  scroll-snap-type: none !important;
+}
+
+/* Робимо секції звичайними, щоб вони не «вискакували» */
+.is-buggy-browser .story {
+  position: relative !important; /* Вимикаємо sticky */
+  height: auto !important;     /* Або залишаємо 100vh, якщо хочете повноекранність */
+  min-height: 100vh;
+  scroll-snap-align: none !important;
+  scroll-snap-stop: normal !important;
+  transform: none !important;
+}
+
+/* Якщо ви хочете, щоб вони все одно перекривалися, але без глюків скролу: */
+.is-buggy-browser .story {
+  position: relative !important;
+  top: auto !important;
+}
 /*.story-3::before {
   content: "";
   position: absolute;
