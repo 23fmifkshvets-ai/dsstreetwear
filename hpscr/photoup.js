@@ -23,11 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // 🔥 ЗАКРИТТЯ
         if (e.target.id === "modal" || e.target.classList.contains('close')) {
             modal.style.display = "none";
 
-            // 🔓 повертаємо скрол
+
             document.body.style.position = "";
             document.body.style.top = "";
             document.body.style.width = "";
