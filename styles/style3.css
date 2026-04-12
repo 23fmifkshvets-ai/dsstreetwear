@@ -601,14 +601,6 @@ a.logo-link:hover .logo-img {
   overflow: hidden;
   z-index: 3;
 }
-.story-3 {
-  position: relative; /* Обов'язково для прив'язки шарів */
-  background-image: url("../img/erfurt/photo_2026-04-10_22-47-53.jpg");
-  background-size: cover;
-  background-position: var(--bg-x, 10%) var(--bg-y, 20%);
-  z-index: 3;
-  overflow: hidden; /* Щоб виступ у -3px не вилазив на інші блоки */
-}
 
 .story-3::before {
   content: "";
