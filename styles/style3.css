@@ -51,6 +51,26 @@ body {
   overscroll-behavior-y: contain;
 }
 
+/* 1. План Б: СТИЛІ ДЛЯ ТИХ, У КОГО НЕМАЄ JS (АБО ВІН ВИМКНЕНИЙ) */
+.no-js .story {
+  position: relative; /* Ніяких sticky, просто блоки один за одним */
+  height: auto;
+  scroll-snap-align: none;
+}
+
+/* 2. План А: СТИЛІ ДЛЯ СУЧАСНИХ БРАУЗЕРІВ ІЗ ПРАЦЮЮЧИМ JS */
+/* (Ваш основний код для слайдів) */
+.js .story {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+}
+
+/* 3. СПЕЦІАЛЬНИЙ ПЛАН ДЛЯ ГЛЮЧНОГО XIAOMI (Через той скрипт, що ми обговорювали) */
+.is-buggy-browser .story {
+  position: relative !important;
+  scroll-snap-type: none !important;
+}
 /* body > *:first-child {
      scroll-snap-align: start;
    }*/
