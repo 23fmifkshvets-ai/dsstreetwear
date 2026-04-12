@@ -638,12 +638,6 @@ a.logo-link:hover .logo-img {
   scroll-snap-stop: normal !important;
   transform: none !important;
 }
-
-/* Якщо ви хочете, щоб вони все одно перекривалися, але без глюків скролу: */
-.is-buggy-browser .story {
-  position: relative !important;
-  top: auto !important;
-}
 /*.story-3::before {
   content: "";
   position: absolute;
