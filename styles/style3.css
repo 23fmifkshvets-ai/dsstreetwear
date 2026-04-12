@@ -593,15 +593,40 @@ a.logo-link:hover .logo-img {
 
 .story-3 {
   background-image: url("../img/erfurt/photo_2026-04-10_22-47-53.jpg");
+  position: relative;
   --bg-x: 10%;
   --bg-y: 20%;
   background-position: var(--bg-x) var(--bg-y); 
   background-size: cover; /**/
-  position: relative;
+  overflow: hidden;
   z-index: 3;
+}
+.story-3 {
+  position: relative; /* Обов'язково для прив'язки шарів */
+  background-image: url("../img/erfurt/photo_2026-04-10_22-47-53.jpg");
+  background-size: cover;
+  background-position: var(--bg-x, 10%) var(--bg-y, 20%);
+  z-index: 3;
+  overflow: hidden; /* Щоб виступ у -3px не вилазив на інші блоки */
 }
 
 .story-3::before {
+  content: "";
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -3px; 
+  
+  background: 
+    linear-gradient(to bottom, transparent 60%, black),
+    rgba(0, 0, 0, 0.45);
+  
+  z-index: 1;
+  pointer-events: none;
+}
+/*.story-3::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -618,11 +643,10 @@ a.logo-link:hover .logo-img {
   bottom: -3px;
 
   background: linear-gradient(to bottom, transparent 60%, black);
-  /*background: #000;*/
   z-index: 3;
   pointer-events: none;
 }
-
+*/
 /*.story-3::after {
   content: "";
   position: absolute;
