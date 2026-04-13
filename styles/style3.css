@@ -9,12 +9,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  forced-color-adjust: none;
+}
+
 :root {
   --header-height: 64px;
   --z-index-header: 1000;
   --z-index-dropdown: 1100;
   --z-index-modal: 2000;
-  color-scheme: only light;
+  color-scheme: light;
 }
 
 html {
