@@ -1,4 +1,4 @@
-**,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -26,7 +26,6 @@ html {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
   scroll-padding-top: 0;
- /* scroll-snape-type: none;*/
 }
 
 html,
@@ -594,9 +593,6 @@ a.logo-link:hover .logo-img {
   
   z-index: 1;
   transition: transform 0.6s ease;
-
-  /*will-change: transform;
-  transform-origin: center center;*/
 }
 
 #story1::after {
@@ -649,6 +645,10 @@ a.logo-link:hover .logo-img {
   
   z-index: 1;
   pointer-events: none;
+}
+
+.story:last-child {
+  min-height: calc(100dvh + 100px);
 }
 
 /*  */
