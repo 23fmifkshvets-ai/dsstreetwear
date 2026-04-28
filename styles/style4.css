@@ -274,17 +274,28 @@ a.logo-link:hover .logo-img {
   /* display: flex;
   align-items: stretch;*/
 }
-
+/*
 .product-gallery,
 .product-info {
   flex: 1;
 }
-
+*/
 /* Галерея */
+/* */
+.product-gallery,
+.product-info,
+.product-btn_container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.product-btn_container {
+  margin: 0 auto;
+}
+/* */
 .product-gallery {
   display: flex;
   justify-content: center;
-
   position: relative;
 }
 
@@ -378,7 +389,7 @@ a.logo-link:hover .logo-img {
 }
 
 .product-info {
-  padding: 30px;
+  padding-top: 15px; /* */
   border: 1px solid var(--border-color);
   color: var(--text-main);
 }
@@ -395,18 +406,29 @@ a.logo-link:hover .logo-img {
   margin-bottom: 15px;
 }
 
+.product-description,
+.product-description h2 {
+  padding: 0 15px;
+}
+
 .product-description p,
 .features-list {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #7b7474;
+  padding: 0 10px; /* */
 }
-
+/* */
+.features-list li {
+  list-style: none;
+  padding-left: 30px;
+}
+/*
 .features-list {
   padding-left: 15px;
 }
-
+*/
 /*---- anime---*/
 .product-btn_container {
   width: 100%;
@@ -418,10 +440,9 @@ a.logo-link:hover .logo-img {
   transform: translateY(30px);
   animation: productReveal .9s ease forwards;
   animation-delay: .4s;
-
 }
 
-/* сама анімація */
+
 @keyframes productReveal {
   to {
     opacity: 1;
@@ -436,6 +457,12 @@ a.logo-link:hover .logo-img {
 }
 
 .product-info {
+  min-height: 100vh;
+  /* */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
   opacity: 0;
   transform: translateY(30px);
   animation: productReveal .9s ease forwards;
@@ -448,7 +475,6 @@ a.logo-link:hover .logo-img {
   will-change: transform, opacity;
 }
 
-/*---- anime---*/
 
 .product-btn {
   display: flex;
@@ -458,6 +484,36 @@ a.logo-link:hover .logo-img {
   width: 60%;
   padding: 0 40px;
   box-sizing: border-box;
+}
+
+.new-row {
+  white-space: pre-line;
+}
+
+.li-title {
+  margin-bottom: 0 !important;
+}
+
+.aet-li {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.li-title,
+.li-title span {
+  font-weight: 900;
+  list-style: none;
+}
+
+.post-text {
+  margin-top: auto;
+  margin-bottom: -5px;
+  padding: 5px 20px;
+}
+
+.post-text span {
+  font-style: italic;
+  font-size: 11px;
 }
 
 .product-controls {
