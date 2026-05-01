@@ -516,6 +516,11 @@ a.logo-link:hover .logo-img {
 .stories {
   display: block;
 }
+.stories::after {
+  content: "";
+  display: block;
+  height: 100vh;
+}
 
 .story {
   height: 100dvh;
@@ -528,11 +533,10 @@ a.logo-link:hover .logo-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: var(--bg-x, 50%) var(--bg-y, 50%);
-
-  overflow: hidden;
+  
   position: sticky;
   isolation: isolate;
-  transform: translateZ(0);
+ /* transform: translateZ(0);*/
   --overlay: 0;
 
   /* scroll-snap-align: start;
@@ -542,7 +546,7 @@ a.logo-link:hover .logo-img {
   
   -webkit-transform: translate3d(0,0,0); /* */
   transform: translate3d(0,0,0);/**/
-  overflow: hidden;/**/
+  overflow: visible;/**/
 }
 
 .story::before {
