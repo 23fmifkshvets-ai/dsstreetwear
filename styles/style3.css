@@ -265,7 +265,8 @@ a.logo-link:hover .logo-img {
 
 .announcement-bar {
   width: 100%;
-  background: #000;
+  background: #FFF;
+  color: #000;
   border-top: 1px solid rgba(255,255,255,0.08);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 
