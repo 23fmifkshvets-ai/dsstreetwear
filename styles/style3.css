@@ -261,7 +261,50 @@ a.logo-link:hover .logo-img {
 
 /* #endregion */
 
+/* #region ANNOUNCEMENT BAR */
 
+.announcement-bar {
+  width: 100%;
+  background: #000;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  position: relative;
+  z-index: 1000;
+}
+
+.announcement-track {
+  display: flex;
+  width: max-content;
+
+  animation: marquee 22s linear infinite;
+}
+
+.announcement-track span {
+  display: inline-block;
+
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  padding: 10px 0;
+  padding-right: 60px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* #endregion */
 
 /* #region HERO */
 
