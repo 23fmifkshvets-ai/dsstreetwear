@@ -265,31 +265,33 @@ a.logo-link:hover .logo-img {
 
 .announcement-bar {
   width: 100%;
-  background: #FFF;
-  color: #000;
+  background: #000;
+  overflow: hidden;
+
   border-top: 1px solid rgba(255,255,255,0.08);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 
-  overflow: hidden;
-  white-space: nowrap;
+  position: sticky;
+  top: var(--header-height);
 
-  position: relative;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .announcement-track {
   display: flex;
-  width: max-content;
+  width: fit-content;
 
-  animation: marquee 22s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 .announcement-track span {
-  display: inline-block;
-
   color: #fff;
+
   font-size: 12px;
   letter-spacing: 2px;
+  white-space: nowrap;
+
+  display: block;
 
   padding: 10px 0;
   padding-right: 60px;
@@ -306,7 +308,6 @@ a.logo-link:hover .logo-img {
 }
 
 /* #endregion */
-
 /* #region HERO */
 
 .hero {
