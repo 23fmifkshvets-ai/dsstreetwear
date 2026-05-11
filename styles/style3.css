@@ -103,7 +103,6 @@ body {
   border-radius: 4px;
 }
 
-/* Повзунок при наведенні */
 ::-webkit-scrollbar-thumb:hover {
   background: #f5c400;
 }
@@ -265,7 +264,8 @@ a.logo-link:hover .logo-img {
 
 .announcement-bar {
   width: 100%;
-  background: #000;
+  background: #FFF;
+  color: #000;
   overflow: hidden;
 
   border-top: 1px solid rgba(255,255,255,0.08);
