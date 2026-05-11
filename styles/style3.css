@@ -980,6 +980,9 @@ a.logo-link:hover .logo-img {
     mix-blend-mode: difference;
     height: 36px;
   }
+  .announcement-bar{
+    display: none;
+  }
 
   .hero,
   .hero-video {
