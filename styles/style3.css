@@ -262,7 +262,7 @@ a.logo-link:hover .logo-img {
 
 /* #region ANNOUNCEMENT BAR */
 
-.announcement-bar {
+/* .announcement-bar {
   width: 100%;
   background: #000;
   overflow: hidden;
@@ -294,6 +294,49 @@ a.logo-link:hover .logo-img {
 
   padding: 10px 0;
   padding-right: 60px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+} */
+
+.announcement-bar {
+  width: 100%;
+  overflow: hidden;
+
+  background: #000;
+  color: #fff;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+
+  position: sticky;
+  top: var(--header-height);
+
+  z-index: 999;
+}
+
+.announcement-track {
+  display: flex;
+  width: max-content;
+
+  animation: marquee 18s linear infinite;
+}
+
+.announcement-track span {
+  white-space: nowrap;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  padding: 10px 40px;
+  flex-shrink: 0;
 }
 
 @keyframes marquee {
