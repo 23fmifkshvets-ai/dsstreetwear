@@ -632,8 +632,8 @@ a.logo-link:hover .logo-img {
  scroll-snap-stop: always; */
   
   -webkit-transform: translate3d(0,0,0); /* */
-  transform: translate3d(0,0,0);/**/
-  overflow: visible;/**/
+
+  overflow: hidden;
 }
 
 .story::before {
@@ -734,7 +734,7 @@ a.logo-link:hover .logo-img {
     linear-gradient(to bottom, transparent 60%, black),
     rgba(0, 0, 0, 0.45);
   
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
 }
 
