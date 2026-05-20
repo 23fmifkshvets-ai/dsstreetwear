@@ -431,7 +431,7 @@ a.logo-link:hover .logo-img {
 /* #region PRODUCT CARD */
 
 
-.products {
+.products, .products-reveal {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
